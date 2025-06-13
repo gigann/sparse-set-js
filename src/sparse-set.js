@@ -156,7 +156,7 @@ export default class SparseSet {
   }
 
   toArray() {
-    return this.#dense.slice(0, this.#n);
+    return [...this.#dense.slice(0, this.#n)];
   }
 
   isEmpty() {
