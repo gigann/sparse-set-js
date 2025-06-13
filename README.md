@@ -11,7 +11,7 @@ A sparse set is a performant, set-like unsigned integer collection, providing O(
 ## Installation
 
 ```js
-npm i github:gigann/sparse-set
+npm install https://github.com/gigann/sparse-set.git
 ```
 
 ## Usage
