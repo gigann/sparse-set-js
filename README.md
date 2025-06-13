@@ -2,6 +2,10 @@
 
 SparseSet is a performant, set-like unsigned integer collection, providing O(1) time complexity for addition, deletion, and lookup. Iteration is O(n).
 
+## Context
+
+I made this for my personal use.
+
 ## Features
 
 - ECMA Script 2015 (ES6) style API
