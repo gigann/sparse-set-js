@@ -1,10 +1,6 @@
 # sparse-set-js
 
-SparseSet is a performant, set-like unsigned integer collection, providing O(1) time complexity for addition, deletion, and lookup. Iteration is O(n).
-
-## Context
-
-I made this for my personal use.
+A sparse set is a performant, set-like unsigned integer collection, providing O(1) time complexity for addition, deletion, and lookup. Iteration is O(n).
 
 ## Features
 
