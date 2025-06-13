@@ -16,9 +16,9 @@ export default class SparseSet {
 
   /**
    * 
-   * @param {*} capacity Maximum quantity of integers that the SparseSet can contain.
-   * @param {*} maximumValue Highest possible integer that the SparseSet can contain.
-   * @param {*} UintXXArray Unsigned integer TypedArray constructor for the sparse and dense arrays.
+   * @param {number} capacity Maximum quantity of integers that the SparseSet can contain.
+   * @param {number} maximumValue Highest possible integer that the SparseSet can contain.
+   * @param {TypedArrayConstructor} UintXXArray Unsigned integer TypedArray constructor for the sparse and dense arrays.
    */
   constructor(capacity, maximumValue, UintXXArray = Uint32Array) {
     this.#assert(capacity);
@@ -61,6 +61,7 @@ export default class SparseSet {
 
   /**
    * Appends a new element with a specified value to the end of the SparseSet.
+   * @param {number} value 
    */
   add(value) {
     this.#assert(value);
@@ -79,6 +80,7 @@ export default class SparseSet {
   /**
    * Removes a specified value from the SparseSet.
    * @returns Returns true if an element in the SparseSet existed and has been removed, or false if the element does not exist.
+   * @param {number} value 
    */
   delete(value) {
     this.#assert(value);
@@ -97,6 +99,7 @@ export default class SparseSet {
 
   /**
    * @returns a boolean indicating whether an element with the specified value exists in the SparseSet or not.
+   * @param {number} value 
    */
   has(value) {
     if (value > this.#maximumValue) return false;
@@ -111,6 +114,8 @@ export default class SparseSet {
 
   /**
    * Executes a provided function once per each value in the SparseSet object, in insertion order.
+   * @param {function} callbackfn 
+   * @param {*} thisArg 
    */
   forEach(callbackfn, thisArg) {
     for (let i = 0; i < this.#n; i++) {
@@ -120,6 +125,7 @@ export default class SparseSet {
 
   /**
    * @returns Returns the dense array value from the given dense array index. If no element is associated with the specified index, undefined is returned.
+   * @param {number} index 
    */
   get(index) {
     if (!Number.isInteger(index) || index > this.#maximumValue || index < 0 || index >= this.#n) return undefined;
