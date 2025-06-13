@@ -2,7 +2,8 @@
   "name": "sparse-set",
   "version": "0.0.1",
   "description": "A JS implementation of the Sparse Set data structure.",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
