@@ -2,9 +2,11 @@
   "name": "sparse-set",
   "version": "0.0.1",
   "description": "A JS implementation of the Sparse Set data structure.",
-  "main": "index.js",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,10 @@
   ],
   "author": "Gerald Gann",
   "license": "ISC",
-  "types": "src/index.d.ts",
   "devDependencies": {
     "jest": "^30.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
