@@ -11,14 +11,13 @@
     "url": "tbd"
   },
   "keywords": [
-    "sparse",
-    "set",
+    "sparse set",
     "sparse-set",
     "sparse",
     "set"
   ],
   "author": "Gerald Gann",
-  "license": "WTFPL",
+  "license": "ISC",
   "types": "src/index.d.ts",
   "devDependencies": {
     "jest": "^30.0.0"
