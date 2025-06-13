@@ -59,6 +59,3 @@ sset.forEach(e => {
 ```js
 sset.clear();
 ```
-
-## Testing
-// TODO
