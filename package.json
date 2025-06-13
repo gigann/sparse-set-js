@@ -1,0 +1,26 @@
+{
+  "name": "sparse-set",
+  "version": "0.0.1",
+  "description": "A JS implementation of the Sparse Set data structure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "keywords": [
+    "sparse",
+    "set",
+    "sparse-set",
+    "sparse",
+    "set"
+  ],
+  "author": "Gerald Gann",
+  "license": "WTFPL",
+  "types": "src/index.d.ts",
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}
