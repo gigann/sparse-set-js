@@ -1,2 +1,2 @@
-import SparseSet from "./src/sparse-set";
+import SparseSet from "./src/sparse-set.js";
 export default SparseSet;
