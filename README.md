@@ -11,7 +11,7 @@ SparseSet is a performant, set-like unsigned integer collection, providing O(1) 
 ## Installation
 
 ```js
-npm i github:gigann/sparse-set
+TODO
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm i github:gigann/sparse-set
 ### Import
 
 ```js
-import SparseSet from 'sparse-set';
+TODO
 ```
 
 ### Initialize
